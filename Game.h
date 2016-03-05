@@ -4,9 +4,7 @@
 
 //Structs
 struct GameData : public SystemData
-{
-
-};
+{};
 
 class Game : public System
 {
