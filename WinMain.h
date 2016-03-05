@@ -1,12 +1,7 @@
-#ifndef _WINMAIN_H
-#define _WINMAIN_H
+#pragma once
 
 //C Runtime Header Files
-#ifndef _WINDOW_
-	#include <Windows.h>
-#endif
+#include <Windows.h>
 
 int _tmain(int argc, char* argv[]);
 int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int mCmdShow);
-
-#endif //_WINMAIN_H
