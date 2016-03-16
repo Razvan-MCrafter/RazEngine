@@ -15,7 +15,7 @@ UObject::UObject()
 , m_bCanDraw(true)
 , m_bCanTick(true)
 {
-	m_Name = _T("Object_") + TOSTRING9(m_ID); //TOSTRING
+	m_Name = _T("Object_") + TOSTRING(m_ID);
 	++m_objectAmount;
 }
 

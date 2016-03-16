@@ -12,7 +12,7 @@
 //Defines
 #ifdef UNICODE
 	#define tstring wstring
-	#define TOSTRING9(value) std::to_wstring(value)
+	#define TOSTRING(value) std::to_wstring(value)
 #else
 	#define tstring string
 	#define TOSTRING(value) std::to_string(value)

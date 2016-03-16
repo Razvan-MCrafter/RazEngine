@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _UOBJECT_H
+#define _UBOJECT_H
 
 //Additional include files
 #ifndef _CONTEXT_H
@@ -69,3 +70,4 @@ private:
 	bool m_bCanTick;
 	bool m_bCanDraw;
 };
+#endif

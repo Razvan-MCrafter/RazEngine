@@ -3,9 +3,14 @@
 //Additional include files
 #include "System.h"
 #include "Game.h"
+#include "Window.h"
 
-#include "deletemacros.h"
-#include "string.h"
+#ifndef _DELETEMACRO_H
+	#include "deletemacros.h"
+#endif
+#ifndef _STRING_H
+	#include "string.h"
+#endif
 
 EngineState Engine::m_EngineState = EngineState::Invalid;
 
@@ -66,15 +71,28 @@ int Engine::Initialize()
 		return false;
 
 	//Add some systems
+	if (!AddSystem(new Window(WindowData(640, 480))))
+		return false;
+
+	//Initialize
+	if (!m_mapSystems[SystemType::Sys_Window]->Initialize())
+		return false;
 	
 	return true;
 }
-int Engine::Draw(const Context& context)
+int Engine::Draw(Context& context)
 {
 	return true;
 }
-int Engine::Update(const Context& context)
+int Engine::Update(Context& context)
 {
+	for (std::pair<SystemType, System*> pSys : m_mapSystems)
+	{
+		if (!pSys.second)
+			continue;
+
+		pSys.second->Update(context);
+	}
 	return true;
 }
 int Engine::ShutDown()
