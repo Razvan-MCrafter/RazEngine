@@ -37,6 +37,9 @@
     <Filter Include="Header Files\Core\Systems\Base">
       <UniqueIdentifier>{df528def-bf99-48d3-a821-f7cf4b5f0c8d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Defines\Math">
+      <UniqueIdentifier>{dc3df653-8519-4fe8-827a-c61efa649357}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WinMain.h">
@@ -69,6 +72,24 @@
     <ClInclude Include="Window.h">
       <Filter>Header Files\Core\Systems\Base</Filter>
     </ClInclude>
+    <ClInclude Include="Matrix2D.h">
+      <Filter>Header Files\Defines\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect2D.h">
+      <Filter>Header Files\Defines\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>Header Files\Defines\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="d2dutill.h">
+      <Filter>Header Files\Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="color.h">
+      <Filter>Header Files\Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
@@ -88,6 +109,18 @@
     </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>Header Files\Core\Systems\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix2D.cpp">
+      <Filter>Header Files\Defines\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect2D.cpp">
+      <Filter>Header Files\Defines\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2D.cpp">
+      <Filter>Header Files\Defines\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
