@@ -55,7 +55,7 @@ private:
 	//void operator delete(void* pdelete);
 
 	HRESULT CreateDeviceIndependentResources();
-	HRESULT CreateDeviceDependentResources();
+	HRESULT CreateDeviceDependantResources();
 
 	void DiscardDeviceResources();
 
@@ -71,4 +71,3 @@ private:
 	Window* m_pWindow;
 };
 #endif
-
