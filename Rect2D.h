@@ -1,4 +1,4 @@
-#ifndef _RECT2D_H
+ #ifndef _RECT2D_H
 #define _RECT2D_H
 
 #ifndef _VECTOR2D_H
@@ -103,4 +103,3 @@ inline bool operator!= (const Rect2D r1, const Rect2D& r2)
 }
 
 #endif
-

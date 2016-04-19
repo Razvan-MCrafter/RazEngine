@@ -102,10 +102,13 @@ int Engine::Draw(Context& context)
 
 	//Draw our game
 	RENDERER->SetColor(Color(1, 0, 0, 1));
-	RENDERER->FillRect(100, 100, 300, 200);
+	RENDERER->DrawCircle(Vector2D(200, 200), 100, 2.5f);
 
 	RENDERER->SetColor(Color(0, 1, 0, 1));
 	RENDERER->FillRect(200, 200, 300, 200);
+
+	RENDERER->SetColor(Color(0, 0, 1, 1));
+	RENDERER->DrawLine(200, 450, 300, 300, 5.0f);
 
 	graph->EndDraw();
 

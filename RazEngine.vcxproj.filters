@@ -46,7 +46,7 @@
     <Filter Include="Header Files\Core\Systems\Game">
       <UniqueIdentifier>{26a804c4-ff14-4341-b55c-48064a1dac72}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Core\Systems\Window">
+    <Filter Include="Header Files\Core\Systems\Graphics\Window">
       <UniqueIdentifier>{9afde619-68d4-4ec2-aee2-41b2e81c4710}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -93,17 +93,17 @@
     <ClInclude Include="Game.h">
       <Filter>Header Files\Core\Systems\Game</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics.h">
-      <Filter>Header Files\Core\Systems\Graphics</Filter>
-    </ClInclude>
     <ClInclude Include="Window.h">
-      <Filter>Header Files\Core\Systems\Window</Filter>
+      <Filter>Header Files\Core\Systems\Graphics\Window</Filter>
     </ClInclude>
     <ClInclude Include="GraphicsDeviceManager.h">
       <Filter>Header Files\Core\Systems\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Renderer.h">
       <Filter>Header Files\Core\Systems\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Header Files\Core\Systems\Graphics\Window</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -135,7 +135,7 @@
       <Filter>Header Files\Core\Systems\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="Window.cpp">
-      <Filter>Header Files\Core\Systems\Window</Filter>
+      <Filter>Header Files\Core\Systems\Graphics\Window</Filter>
     </ClCompile>
     <ClCompile Include="GraphicsDeviceManager.cpp">
       <Filter>Header Files\Core\Systems\Graphics</Filter>
