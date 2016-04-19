@@ -31,10 +31,10 @@ public:
 	//Methods
 	HRESULT OnResize(UINT width, UINT height);
 
-	ID2D1HwndRenderTarget* GetRenderTarget();
-	IWICImagingFactory* GetImageFactory();
-	ID2D1SolidColorBrush* GetColorBrush();
-	ID2D1Factory* GetD2DFactory();
+	ID2D1HwndRenderTarget* GetRenderTarget() { return m_pRenderTarget; }
+	IWICImagingFactory* GetImageFactory() { return m_pImageFactory; }
+	ID2D1SolidColorBrush* GetColorBrush() { return m_pColorBrush; }
+	ID2D1Factory* GetD2DFactory() { return m_pD2DFactory; }
 
 protected:
 	//Methods

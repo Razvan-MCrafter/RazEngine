@@ -102,6 +102,9 @@
     <ClInclude Include="GraphicsDeviceManager.h">
       <Filter>Header Files\Core\Systems\Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files\Core\Systems\Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
@@ -135,6 +138,9 @@
       <Filter>Header Files\Core\Systems\Window</Filter>
     </ClCompile>
     <ClCompile Include="GraphicsDeviceManager.cpp">
+      <Filter>Header Files\Core\Systems\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
       <Filter>Header Files\Core\Systems\Graphics</Filter>
     </ClCompile>
   </ItemGroup>

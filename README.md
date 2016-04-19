@@ -3,6 +3,9 @@ This is my attempt to create a game engine.
 I'm just learning more C++ working on this.
 Thanks to Bandyte for his Tutorials.
 
-It is just opening a Window so far.
+What it does:
+For now it's just opening a Window.
 
-To build this you will need Visual Studio Community Edition 2015
+How to build this:
+Download and install Visual Studio Community Edition 2015
+Open the Project

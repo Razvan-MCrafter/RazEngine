@@ -1,6 +1,8 @@
 #include "Engine.h"
 
 //Additional include files
+#include"Renderer.h"
+
 #include "System.h"
 #include "Game.h"
 #include "Window.h"
@@ -30,6 +32,7 @@ Engine::~Engine()
 int Engine::RunLoop()
 {
 	Context context;
+	context.pRenderer = new Renderer();
 
 	if (!this->Initialize())
 		return 0;
@@ -98,7 +101,14 @@ int Engine::Draw(Context& context)
 	graph->BeginDraw();
 
 	//Draw our game
-	
+	RENDERER->SetColor(Color(1, 0, 0, 1));
+	RENDERER->FillRect(100, 100, 300, 200);
+
+	RENDERER->SetColor(Color(0, 1, 0, 1));
+	RENDERER->FillRect(200, 200, 300, 200);
+
+	graph->EndDraw();
+
 	return true;
 }
 int Engine::Update(Context& context)

@@ -19,8 +19,8 @@ public:
 	//void* operator new(size_t size);
 	//void operator delete(void* pdelete);
 
-	virtual bool Initialize()							{m_bIsInitialized = true; return true; }
-	virtual bool PostInitialize()						{m_bIsPostInitialized = true; return true; }
+	virtual bool Initialize()							{ m_bIsInitialized = true; return true; }
+	virtual bool PostInitialize()						{ m_bIsPostInitialized = true; return true; }
 	virtual bool LoadContent()							{ m_bIsContentLoaded = true; return true; }
 	virtual bool PostLoadContent()						{ m_bIsPostContentLoaded = true; return true; }
 	virtual bool Update(Context& context)				{ return true; }
