@@ -20,7 +20,7 @@
 struct WindowData : public SystemData
 {
 	WindowData();
-	WindowData(int w, int h, const std::tstring& title = _T("RazEngine v1.0"), int b = 32, bool fs = false);
+	WindowData(int w, int h, const std::tstring& title = _T("LuckyEngine v1.0"), int b = 32, bool fs = false);
 
 	int width;
 	int height;
