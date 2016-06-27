@@ -1,7 +1,7 @@
 #include "Engine.h"
 
 //Additional include files
-#include"Renderer.h"
+#include "Renderer.h"
 
 #include "System.h"
 #include "Game.h"
@@ -10,7 +10,7 @@
 
 #include "GraphicsDeviceManager.h"
 
-#ifndef _DELETEMACRO_H
+#ifndef _DELETEMACROS_H
 	#include "deletemacros.h"
 #endif
 #ifndef _STRING_H

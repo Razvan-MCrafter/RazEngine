@@ -49,6 +49,9 @@
     <Filter Include="Header Files\Core\Systems\Graphics\Window">
       <UniqueIdentifier>{9afde619-68d4-4ec2-aee2-41b2e81c4710}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Core\Systems\Graphics\Timer">
+      <UniqueIdentifier>{9c4c515c-8a5f-45ae-b6ad-6159e2f2ba74}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WinMain.h">
@@ -65,9 +68,6 @@
     </ClInclude>
     <ClInclude Include="context.h">
       <Filter>Header Files\Defines\Context</Filter>
-    </ClInclude>
-    <ClInclude Include="Engine.h">
-      <Filter>Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="System.h">
       <Filter>Header Files\Core\Systems\Base</Filter>
@@ -105,6 +105,15 @@
     <ClInclude Include="Graphics.h">
       <Filter>Header Files\Core\Systems\Graphics\Window</Filter>
     </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineTimer.h">
+      <Filter>Header Files\Core\Systems\Graphics\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files\Core\Systems\Graphics\Timer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
@@ -112,9 +121,6 @@
     </ClCompile>
     <ClCompile Include="System.cpp">
       <Filter>Header Files\Core\Systems\Base</Filter>
-    </ClCompile>
-    <ClCompile Include="Engine.cpp">
-      <Filter>Header Files\Core</Filter>
     </ClCompile>
     <ClCompile Include="UObject.cpp">
       <Filter>Header Files\SceneGraph\Base</Filter>
@@ -142,6 +148,15 @@
     </ClCompile>
     <ClCompile Include="Renderer.cpp">
       <Filter>Header Files\Core\Systems\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineTimer.cpp">
+      <Filter>Header Files\Core\Systems\Graphics\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Header Files\Core\Systems\Graphics\Timer</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
