@@ -5,13 +5,16 @@
 
 //Structs
 struct GameData : public SystemData
-{};
+{
+	GameData();
+	GameData(const std::tstring &name);
+};
 
 class Game : public System
 {
 public:
-	Game(const GameData& data);
+	Game(const GameData &data);
 	virtual ~Game();
 };
-#endif
 
+#endif

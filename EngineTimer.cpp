@@ -37,15 +37,15 @@ bool EngineTimer::Initialize()
 #if defined(DEBUG) | defined(_DEBUG)
 	if (!m_pWorldTimer->Initialize())
 		return false;
-	m_pWorldTimer->SetInitialized();
+	/*m_pWorldTimer->SetInitialized();
 	if (!m_pWorldTimer->PostInitialized())
 		return false;
-	m_pWorldTimer->SetPostInitialized();
+	m_pWorldTimer->SetPostInitialized();*/
 #else
 	m_pWorldTimer->Initialize();
-	m_pWorldTimer->SetInitialized();
+	//m_pWorldTimer->SetInitialized();
 	m_pWorldTimer->PostInitialized();
-	m_pWorldTimer->SetPostInitialized();
+	//m_pWorldTimer->SetPostInitialized();
 #endif
 
 	//Logger::Log(_T("Engine Timer Initialized"), LOGTYPE_INFO, false);

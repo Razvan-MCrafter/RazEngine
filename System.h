@@ -24,7 +24,7 @@ enum SystemType
 struct SystemData
 {
 	SystemData();
-	SystemData(const SystemType& type);
+	SystemData(const SystemType &type);
 
 	SystemType systemType;
 };
@@ -37,7 +37,7 @@ public:
 	SystemType GetType() { return m_SystemType; }
 
 protected:
-	System(const SystemData& data);
+	System(const SystemData &data);
 	virtual ~System();
 
 	virtual bool Initialize()							{ return UObject::Initialize(); }
@@ -48,4 +48,3 @@ protected:
 
 	SystemType m_SystemType;
 };
-

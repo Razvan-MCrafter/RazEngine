@@ -23,7 +23,7 @@ public:
 	bool Initialize();
 	bool PostInitialize();
 	bool Update(Context &context);
-	bool Shutdown();
+	bool ShutDown();
 
 	float GetTotalTime();
 	float GetDeltaTime();
